@@ -1,0 +1,11 @@
+*.prefs
+*.xml
+*.d
+*.o
+*.su
+/Debug/Appl/ApplMain
+/Debug/Application/ApplMain
+/Debug/Core/Src
+/Debug/Core/Startup
+/Debug/Drivers/STM32F1xx_HAL_Driver/Src
+/Debug
