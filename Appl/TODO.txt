@@ -1,0 +1,7 @@
+TO DO:
+ - add scheduler module to project
+ - add HW serial objects like in Arduino
+ - integrate iBusBM library
+
+DONE:
+  - activate/use external clock (24.01.2022)

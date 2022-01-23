@@ -1,16 +1,19 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stdint.h"
 
+/* Application interface */
+#include "digitalOutputs.h"
+#include "delay.h"
+
 #include "applMain.h"
 
-/* TODO: Move this in BoardConfig */
-#include "stm32f1xx_ll_gpio.h"
-#include "stm32f1xx_ll_utils.h"
+
 
 
 /* Private variables ---------------------------------------------------------*/
 static uint8_t mainCnt;
 
+/* Public Functions  ---------------------------------------------------------*/
 /**
   * @brief Main application - initialization function.
   * @retval None
@@ -19,7 +22,8 @@ void mainAppl_Init(void)
 {
     mainCnt = 0u;
 
-    /* TODO: Add implementation here */
+    /* Initialize Digital Outputs */
+    DO_Init();
 }
 
 /**
@@ -31,12 +35,11 @@ void mainAppl_MainRunnable(void)
     /* Increment a variable for test */
     mainCnt++;
 
-    /* For test, toggle LED connected on PC13 pin.
-     * LL functions are used for this. */
-    LL_GPIO_SetOutputPin(GPIOC, LL_GPIO_PIN_13);
-    LL_mDelay(500u);
-    LL_GPIO_ResetOutputPin(GPIOC, LL_GPIO_PIN_13);
-    LL_mDelay(500u);
+    /* For test, toggle Green LED */
+    DO_Set(LED_GREEN);
+    delayMS(500u);
+    DO_Clear(LED_GREEN);
+    delayMS(200u);
 
 	/* TODO: Add implementation here */
 }
