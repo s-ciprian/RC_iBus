@@ -16,6 +16,8 @@ Common symbol       size              file
 
 uwTick              0x4               ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
 pFlash              0x20              ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o
+huart1              0x44              ./Appl/UART_Config/cfgUART.o
+huart2              0x44              ./Appl/UART_Config/cfgUART.o
 
 Discarded input sections
 
@@ -86,6 +88,98 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x103 ./Appl/Delay/delay.o
  .debug_macro   0x0000000000000000       0x6a ./Appl/Delay/delay.o
  .debug_macro   0x0000000000000000      0x1df ./Appl/Delay/delay.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .group         0x0000000000000000        0xc ./Appl/ErrorHandler/ehErrorHandler.o
+ .text          0x0000000000000000        0x0 ./Appl/ErrorHandler/ehErrorHandler.o
+ .data          0x0000000000000000        0x0 ./Appl/ErrorHandler/ehErrorHandler.o
+ .bss           0x0000000000000000        0x0 ./Appl/ErrorHandler/ehErrorHandler.o
+ .bss._ZL14ehMcuErrorCode
+                0x0000000000000000        0x1 ./Appl/ErrorHandler/ehErrorHandler.o
+ .text.eh_Init  0x0000000000000000       0x18 ./Appl/ErrorHandler/ehErrorHandler.o
+ .text.eh_SetMcuError
+                0x0000000000000000       0x1c ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_info    0x0000000000000000      0x2a4 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_abbrev  0x0000000000000000      0x124 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_aranges
+                0x0000000000000000       0x28 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_ranges  0x0000000000000000       0x18 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000      0x19d ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000      0xb7a ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000      0x20f ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000       0x2e ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000       0x22 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000       0x1c ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000       0x22 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000       0x8e ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000       0x51 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000      0x103 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000       0x6a ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000      0x1df ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000       0x1c ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000       0x22 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000       0xc3 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000      0xd23 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000     0xe09e ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000       0x6d ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000     0x3468 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000      0x17b ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000       0x5c ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000      0x5be ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000      0x289 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000      0x1cb ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000      0x114 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000      0x1b2 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000       0x27 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000      0x136 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000      0x1bc ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000       0x34 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000       0x3c ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000       0x57 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000       0x88 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000      0x241 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000      0x141 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000      0x279 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_macro   0x0000000000000000       0x83 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_line    0x0000000000000000      0x687 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_str     0x0000000000000000    0x7cd71 ./Appl/ErrorHandler/ehErrorHandler.o
+ .comment       0x0000000000000000       0x54 ./Appl/ErrorHandler/ehErrorHandler.o
+ .debug_frame   0x0000000000000000       0x4c ./Appl/ErrorHandler/ehErrorHandler.o
+ .ARM.attributes
+                0x0000000000000000       0x2d ./Appl/ErrorHandler/ehErrorHandler.o
  .group         0x0000000000000000        0xc ./Appl/IO_Config/digitalOutputs.o
  .group         0x0000000000000000        0xc ./Appl/IO_Config/digitalOutputs.o
  .group         0x0000000000000000        0xc ./Appl/IO_Config/digitalOutputs.o
@@ -144,10 +238,12 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x1c ./Appl/IO_Config/digitalOutputs.o
  .debug_macro   0x0000000000000000       0x22 ./Appl/IO_Config/digitalOutputs.o
  .debug_macro   0x0000000000000000       0xc3 ./Appl/IO_Config/digitalOutputs.o
+ .debug_macro   0x0000000000000000      0xd23 ./Appl/IO_Config/digitalOutputs.o
  .debug_macro   0x0000000000000000     0xe09e ./Appl/IO_Config/digitalOutputs.o
  .debug_macro   0x0000000000000000       0x6d ./Appl/IO_Config/digitalOutputs.o
  .debug_macro   0x0000000000000000      0x20f ./Appl/IO_Config/digitalOutputs.o
  .debug_macro   0x0000000000000000     0x3468 ./Appl/IO_Config/digitalOutputs.o
+ .debug_macro   0x0000000000000000      0x17b ./Appl/IO_Config/digitalOutputs.o
  .debug_macro   0x0000000000000000       0x5c ./Appl/IO_Config/digitalOutputs.o
  .debug_macro   0x0000000000000000      0x5be ./Appl/IO_Config/digitalOutputs.o
  .debug_macro   0x0000000000000000      0x289 ./Appl/IO_Config/digitalOutputs.o
@@ -165,6 +261,98 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x141 ./Appl/IO_Config/digitalOutputs.o
  .debug_macro   0x0000000000000000      0x279 ./Appl/IO_Config/digitalOutputs.o
  .debug_macro   0x0000000000000000       0x83 ./Appl/IO_Config/digitalOutputs.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .group         0x0000000000000000        0xc ./Appl/UART_Config/cfgUART.o
+ .text          0x0000000000000000        0x0 ./Appl/UART_Config/cfgUART.o
+ .data          0x0000000000000000        0x0 ./Appl/UART_Config/cfgUART.o
+ .bss           0x0000000000000000        0x0 ./Appl/UART_Config/cfgUART.o
+ .text.cfgUART_Init
+                0x0000000000000000       0x10 ./Appl/UART_Config/cfgUART.o
+ .text.cfgUART1_Init
+                0x0000000000000000       0x54 ./Appl/UART_Config/cfgUART.o
+ .text.cfgUART2_Init
+                0x0000000000000000       0x54 ./Appl/UART_Config/cfgUART.o
+ .debug_info    0x0000000000000000      0x6a8 ./Appl/UART_Config/cfgUART.o
+ .debug_abbrev  0x0000000000000000      0x174 ./Appl/UART_Config/cfgUART.o
+ .debug_aranges
+                0x0000000000000000       0x30 ./Appl/UART_Config/cfgUART.o
+ .debug_ranges  0x0000000000000000       0x20 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000      0x1a2 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000      0xaa2 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000      0x20f ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000       0x2e ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000       0x22 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000       0x22 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000       0x8e ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000       0x51 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000      0x103 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000       0x6a ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000      0x1df ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000       0x1c ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000       0x22 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000       0xc3 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000      0xd23 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000     0xe09e ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000       0x6d ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000     0x3468 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000      0x174 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000       0x5c ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000      0x5be ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000      0x289 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000      0x1cb ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000      0x114 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000      0x1b2 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000       0x27 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000      0x136 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000      0x1bc ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000       0x34 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000       0x3c ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000       0x57 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000       0x88 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000      0x241 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000      0x141 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000      0x279 ./Appl/UART_Config/cfgUART.o
+ .debug_macro   0x0000000000000000       0x83 ./Appl/UART_Config/cfgUART.o
+ .debug_line    0x0000000000000000      0x6e0 ./Appl/UART_Config/cfgUART.o
+ .debug_str     0x0000000000000000    0x7cc2b ./Appl/UART_Config/cfgUART.o
+ .comment       0x0000000000000000       0x54 ./Appl/UART_Config/cfgUART.o
+ .debug_frame   0x0000000000000000       0x64 ./Appl/UART_Config/cfgUART.o
+ .ARM.attributes
+                0x0000000000000000       0x2d ./Appl/UART_Config/cfgUART.o
+ COMMON         0x0000000000000000       0x88 ./Appl/UART_Config/cfgUART.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
@@ -2852,7 +3040,9 @@ LOAD d:/st/stm32cubeide_1.8.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
 LOAD d:/st/stm32cubeide_1.8.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
 LOAD ./Appl/ApplMain/applMain.o
 LOAD ./Appl/Delay/delay.o
+LOAD ./Appl/ErrorHandler/ehErrorHandler.o
 LOAD ./Appl/IO_Config/digitalOutputs.o
+LOAD ./Appl/UART_Config/cfgUART.o
 LOAD ./Core/Src/main.o
 LOAD ./Core/Src/stm32f1xx_hal_msp.o
 LOAD ./Core/Src/stm32f1xx_it.o
@@ -3319,7 +3509,7 @@ LOAD d:/st/stm32cubeide_1.8.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_ranges  0x0000000000000290       0x50 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_gpio.o
  .debug_ranges  0x00000000000002e0       0xe8 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.o
 
-.debug_macro    0x0000000000000000    0x1843a
+.debug_macro    0x0000000000000000    0x1759c
  .debug_macro   0x0000000000000000       0x86 ./Appl/ApplMain/applMain.o
  .debug_macro   0x0000000000000086      0xb7a ./Appl/ApplMain/applMain.o
  .debug_macro   0x0000000000000c00       0x1c ./Appl/ApplMain/applMain.o
@@ -3361,24 +3551,22 @@ LOAD d:/st/stm32cubeide_1.8.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_macro   0x0000000000015ba9       0x83 ./Appl/Delay/delay.o
  .debug_macro   0x0000000000015c2c       0x24 ./Appl/Delay/delay.o
  .debug_macro   0x0000000000015c50      0x1bb ./Appl/IO_Config/digitalOutputs.o
- .debug_macro   0x0000000000015e0b      0xd23 ./Appl/IO_Config/digitalOutputs.o
- .debug_macro   0x0000000000016b2e      0x17b ./Appl/IO_Config/digitalOutputs.o
- .debug_macro   0x0000000000016ca9      0x224 ./Appl/IO_Config/digitalOutputs.o
- .debug_macro   0x0000000000016ecd       0xd7 ./Appl/IO_Config/digitalOutputs.o
- .debug_macro   0x0000000000016fa4      0x1f8 ./Core/Src/main.o
- .debug_macro   0x000000000001719c      0x2be ./Core/Src/main.o
- .debug_macro   0x000000000001745a       0x74 ./Core/Src/main.o
- .debug_macro   0x00000000000174ce       0xd0 ./Core/Src/main.o
- .debug_macro   0x000000000001759e       0x28 ./Core/Src/main.o
- .debug_macro   0x00000000000175c6       0x2a ./Core/Src/main.o
- .debug_macro   0x00000000000175f0       0x90 ./Core/Src/main.o
- .debug_macro   0x0000000000017680      0x287 ./Core/Src/main.o
- .debug_macro   0x0000000000017907      0x22a ./Core/Src/main.o
- .debug_macro   0x0000000000017b31      0x1f3 ./Core/Src/stm32f1xx_it.o
- .debug_macro   0x0000000000017d24      0x18e ./Core/Src/system_stm32f1xx.o
- .debug_macro   0x0000000000017eb2      0x1b2 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
- .debug_macro   0x0000000000018064      0x1ca ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_gpio.o
- .debug_macro   0x000000000001822e      0x20c ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.o
+ .debug_macro   0x0000000000015e0b      0x224 ./Appl/IO_Config/digitalOutputs.o
+ .debug_macro   0x000000000001602f       0xd7 ./Appl/IO_Config/digitalOutputs.o
+ .debug_macro   0x0000000000016106      0x1f8 ./Core/Src/main.o
+ .debug_macro   0x00000000000162fe      0x2be ./Core/Src/main.o
+ .debug_macro   0x00000000000165bc       0x74 ./Core/Src/main.o
+ .debug_macro   0x0000000000016630       0xd0 ./Core/Src/main.o
+ .debug_macro   0x0000000000016700       0x28 ./Core/Src/main.o
+ .debug_macro   0x0000000000016728       0x2a ./Core/Src/main.o
+ .debug_macro   0x0000000000016752       0x90 ./Core/Src/main.o
+ .debug_macro   0x00000000000167e2      0x287 ./Core/Src/main.o
+ .debug_macro   0x0000000000016a69      0x22a ./Core/Src/main.o
+ .debug_macro   0x0000000000016c93      0x1f3 ./Core/Src/stm32f1xx_it.o
+ .debug_macro   0x0000000000016e86      0x18e ./Core/Src/system_stm32f1xx.o
+ .debug_macro   0x0000000000017014      0x1b2 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+ .debug_macro   0x00000000000171c6      0x1ca ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_gpio.o
+ .debug_macro   0x0000000000017390      0x20c ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.o
 
 .debug_line     0x0000000000000000     0x4809
  .debug_line    0x0000000000000000      0x407 ./Appl/ApplMain/applMain.o
