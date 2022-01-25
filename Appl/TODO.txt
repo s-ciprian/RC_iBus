@@ -1,4 +1,7 @@
 TO DO:
+ - call eh_Init()
+ - call cfgUART_Init()
+ - Move "GPIO Ports Clock Enable" from digitalOuptuts.cpp to IO_Config
  - add scheduler module to project
  - add HW serial objects like in Arduino
  - integrate iBusBM library

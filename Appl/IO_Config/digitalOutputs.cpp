@@ -1,8 +1,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 /* STM32F1 LL */
-#include "stm32f1xx_ll_gpio.h"
-#include "stm32f1xx_ll_bus.h"
+#include "stm32f1xx_hal.h"
 
 /* User code */
 #include "digitalOutputs.h"
@@ -13,8 +12,8 @@
 
 /* Private define ------------------------------------------------------------*/
 /* Map digital outputs name on MCU pins */
-#define LED_GEEN_PC13     LL_GPIO_PIN_13
-
+#define LED_GREEN_PIN        GPIO_PIN_13
+#define LED_GREEN_PORT       GPIOC
 
 /* Private variables ---------------------------------------------------------*/
 
@@ -29,20 +28,20 @@ static void do_DigitalOutputs_DefaultState(void);
   */
 void DO_Init(void)
 {
-    LL_GPIO_InitTypeDef GPIO_InitStruct = {0u, 0u, 0u, 0u, 0u};
-
+    GPIO_InitTypeDef GPIO_InitStruct = {0u, 0u, 0u, 0u};
 
     /* GPIO Ports Clock Enable */
-    LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_GPIOC);
-    LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_GPIOA);
+    __HAL_RCC_GPIOC_CLK_ENABLE();
+    __HAL_RCC_GPIOD_CLK_ENABLE();
+    __HAL_RCC_GPIOA_CLK_ENABLE();
 
 
-    /* Pin PC13: Green LED */
-    GPIO_InitStruct.Pin = LL_GPIO_PIN_13;
-    GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-    GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-    GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-    LL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+    /*Configure GPIO pin : PC13 */
+    GPIO_InitStruct.Pin = LED_GREEN_PIN;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    HAL_GPIO_Init(LED_GREEN_PORT, &GPIO_InitStruct);
 
     /* Set default state for digital outputs */
     do_DigitalOutputs_DefaultState();
@@ -59,7 +58,7 @@ void DO_Set(E_DO_PIN_LIST digitalOutput)
     {
         /* Green LED */
         case LED_GREEN:
-            LL_GPIO_SetOutputPin(GPIOC, LED_GEEN_PC13);
+            HAL_GPIO_WritePin(LED_GREEN_PORT, LED_GREEN_PIN, GPIO_PIN_SET);
             break;
 
         default:
@@ -79,7 +78,7 @@ void DO_Clear(E_DO_PIN_LIST digitalOutput)
     {
         /* Green LED */
         case LED_GREEN:
-            LL_GPIO_ResetOutputPin(GPIOC, LED_GEEN_PC13);
+            HAL_GPIO_WritePin(LED_GREEN_PORT, LED_GREEN_PIN, GPIO_PIN_RESET);
             break;
 
         default:
@@ -99,7 +98,7 @@ void DO_Toggle(E_DO_PIN_LIST digitalOutput)
     {
         /* Green LED */
         case LED_GREEN:
-            LL_GPIO_TogglePin(GPIOC, LED_GEEN_PC13);
+            HAL_GPIO_TogglePin(LED_GREEN_PORT, LED_GREEN_PIN);
             break;
 
         default:

@@ -1,6 +1,6 @@
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32f1xx_ll_utils.h"
+#include "stm32f1xx_hal.h"
 
 /**
   * @brief  FUNCTION: provides delay (in milliseconds) based on STM32 system function
@@ -10,5 +10,5 @@
 void delayMS(uint32_t delay)
 {
     /* call system provided function */
-    LL_mDelay(delay);
+    HAL_Delay(delay);
 }
