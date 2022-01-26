@@ -4,9 +4,10 @@
 /* Application interface */
 #include "digitalOutputs.h"
 #include "delay.h"
+#include "ehErrorHandler.h"
+#include "cfgUART.h"
 
 #include "applMain.h"
-
 
 
 
@@ -15,6 +16,7 @@ static uint8_t mainCnt;
 
 /* Public Functions  ---------------------------------------------------------*/
 /**
+
   * @brief Main application - initialization function.
   * @retval None
   */
@@ -24,6 +26,12 @@ void mainAppl_Init(void)
 
     /* Initialize Digital Outputs */
     DO_Init();
+
+    /* Error Handler initialization */
+    eh_Init();
+
+    /* UART configuration - initialization function */
+    cfgUART_Init();
 }
 
 /**
