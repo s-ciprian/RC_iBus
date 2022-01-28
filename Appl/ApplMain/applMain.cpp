@@ -7,12 +7,20 @@
 #include "ehErrorHandler.h"
 #include "cfgUART.h"
 
+/* stm32duino */
+#include "HardwareSerial.h"
+
 #include "applMain.h"
 
 
 
 /* Private variables ---------------------------------------------------------*/
+/* A test counter */
 static uint8_t mainCnt;
+
+/* Create a global object of type HardwareSerial. */
+HardwareSerial Serial1(PA_10, PA_9);
+
 
 /* Public Functions  ---------------------------------------------------------*/
 /**
@@ -32,6 +40,9 @@ void mainAppl_Init(void)
 
     /* UART configuration - initialization function */
     cfgUART_Init();
+
+    /* Call begin() method of the serial object with needed baud rate */
+    Serial1.begin(115200);
 }
 
 /**
@@ -48,6 +59,9 @@ void mainAppl_MainRunnable(void)
     delayMS(500u);
     DO_Clear(LED_GREEN);
     delayMS(200u);
+
+    /* Send a string on serial port */
+    Serial1.print("Hello ");
 
 	/* TODO: Add implementation here */
 }
