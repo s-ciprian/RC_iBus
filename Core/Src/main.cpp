@@ -19,7 +19,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "applMain.h"
+#include "tsl_time_slots.h"
 
 
 /* Private typedef -----------------------------------------------------------*/
@@ -55,10 +55,10 @@ int main(void)
 
 
   /* ==========================================================================
-   *  Application initialization
+   * Application initialization function
    * ==========================================================================*/
-  /* Call initialization function for application */
-  mainAppl_Init();
+  /* Call Scheduler initialization function */
+  tsl_Init();
 
 
   /* ==========================================================================
@@ -66,10 +66,11 @@ int main(void)
    * ==========================================================================*/
   while (1)
   {
-    /* Application main function */
-    mainAppl_MainRunnable();
+    /* Call Scheduler */
+    tsl_SchedulerRun();
   }
 }
+
 
 /**
   * @brief System Clock Configuration
@@ -77,8 +78,8 @@ int main(void)
   */
 static void SystemClock_Config(void)
 {
-    RCC_OscInitTypeDef RCC_OscInitStruct = {0};
-    RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+    RCC_OscInitTypeDef RCC_OscInitStruct = {0u, 0u, 0u, 0u, 0u, 0u, 0u, 0u, 0u, 0u};
+    RCC_ClkInitTypeDef RCC_ClkInitStruct = {0u, 0u, 0u, 0u, 0u};
 
     /** Initializes the RCC Oscillators according to the specified parameters
     * in the RCC_OscInitTypeDef structure.

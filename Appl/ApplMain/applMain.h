@@ -9,7 +9,6 @@ extern "C" {
 
 /* Exported functions */
 void mainAppl_Init(void);
-void mainAppl_MainRunnable(void);
 
 
 #ifdef __cplusplus
