@@ -12,6 +12,9 @@
 #include "tsl_time_slots.h"
 #include <icc_time_slot_i.h>
 
+#include "tsl_Scheduler_McuTimer.h"
+
+
 
 ///////////////////////////////////////////////////////////////////////////////
 // Private types definitions
@@ -136,6 +139,9 @@ void tsl_Init(void)
 
 	/* Initialization function for Application */
 	tsl_mainAppl_Init();
+
+	/* Register a function that will be called when Tick Timer expires */
+	tslstmr_RegisterTmrExpireCallback(tsl_OnTickTimeEvent);
 }
 
 //******************************************************************************

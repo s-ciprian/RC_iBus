@@ -55,6 +55,7 @@
 									<listOptionValue builtIn="false" value="../Appl/BasicSW/tsl"/>
 									<listOptionValue builtIn="false" value="../Appl/InterCompComm"/>
 									<listOptionValue builtIn="false" value="../Appl/BasicSW/mcu_specific"/>
+									<listOptionValue builtIn="false" value="../Appl/BasicSW/tsl_Scheduler_McuTimer"/>
 									<listOptionValue builtIn="false" value="../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
 									<listOptionValue builtIn="false" value="../stm32duino/Arduino_Core_STM32/STMicroelectronics/hardware/stm32/2.2.0/cores/arduino"/>
 									<listOptionValue builtIn="false" value="../stm32duino/Arduino_Core_STM32/STMicroelectronics/hardware/stm32/2.2.0/cores/arduino/avr"/>
@@ -98,6 +99,7 @@
 									<listOptionValue builtIn="false" value="../Appl/BasicSW/tsl"/>
 									<listOptionValue builtIn="false" value="../Appl/InterCompComm"/>
 									<listOptionValue builtIn="false" value="../Appl/BasicSW/mcu_specific"/>
+									<listOptionValue builtIn="false" value="../Appl/BasicSW/tsl_Scheduler_McuTimer"/>
 									<listOptionValue builtIn="false" value="../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
 									<listOptionValue builtIn="false" value="../stm32duino/Arduino_Core_STM32/STMicroelectronics/hardware/stm32/2.2.0/cores/arduino"/>
 									<listOptionValue builtIn="false" value="../stm32duino/Arduino_Core_STM32/STMicroelectronics/hardware/stm32/2.2.0/cores/arduino/avr"/>
@@ -207,9 +209,6 @@
 							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.symbolsrec.1372412381" name="MCU Output Converter Motorola S-rec with symbols" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.symbolsrec.25598371"/>
 						</toolChain>
 					</folderInfo>
-					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.864842596.810895854" name="stm32f1xx_hal_msp.c" rcbsApplicability="disable" resourcePath="Core/Src/stm32f1xx_hal_msp.c" toolsToInvoke="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.492476412.580346256">
-						<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.492476412.580346256" name="MCU GCC Compiler" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.492476412"/>
-					</fileInfo>
 					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.864842596.217090253" name="syscalls.c" rcbsApplicability="disable" resourcePath="Core/Src/syscalls.c" toolsToInvoke="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.492476412.1464755077">
 						<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.492476412.1464755077" name="MCU GCC Compiler" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.492476412">
 							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.warnings.extra.1521530413" name="Enable extra warning flags (-Wextra)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.warnings.extra" useByScannerDiscovery="false" value="false" valueType="boolean"/>

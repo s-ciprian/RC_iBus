@@ -1,0 +1,2 @@
+TSL Scheduler is based on HW Timer 4 of STM32F1 controller.
+This HW timer is managed using an object HardwareTimer: TickTmr - see file tsl_Scheduler_McuTimer.cpp

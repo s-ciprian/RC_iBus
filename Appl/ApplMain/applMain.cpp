@@ -8,10 +8,10 @@
 #include "ehErrorHandler.h"
 #include "cfgUART.h"
 
+#include "tsl_Scheduler_McuTimer.h"
 
 /* stm32duino */
 #include "HardwareSerial.h"
-#include "HardwareTimer.h"
 
 #include "applMain.h"
 
@@ -24,16 +24,7 @@ static uint8_t mainCnt;
 /* Create a global object of type HardwareSerial. */
 HardwareSerial Serial1(PA_10, PA_9);
 
-/* Create a global object of type Hardware Timer */
-HardwareTimer TickTmr(TIM4);
 
-
-/* TickTimer interrupt callback */
-static void OnTickTmrExpired()
-{
-    /* For test, toggle Green LED */
-    DO_Toggle(LED_GREEN);
-}
 
 /* Public Functions  ---------------------------------------------------------*/
 /**
@@ -54,15 +45,11 @@ void mainAppl_Init(void)
     /* UART configuration - initialization function */
     cfgUART_Init();
 
+    /* Timer for TSL Scheduler initialization function */
+    tslstmr_Init();
+
     /* Call begin() method of the serial object with needed baud rate */
     Serial1.begin(115200);
-
-    /* Set timer interrupt at required time */
-    TickTmr.setOverflow(5000, MICROSEC_FORMAT);
-    /* Call this function on timer interrupt */
-    TickTmr.attachInterrupt(OnTickTmrExpired);
-    /* Hardware Timer - Start */
-    TickTmr.resume();
 }
 
 /**
