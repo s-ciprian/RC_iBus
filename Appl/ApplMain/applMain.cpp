@@ -7,11 +7,9 @@
 #include "delay.h"
 #include "ehErrorHandler.h"
 #include "cfgUART.h"
+#include "iBusComm.h"
 
 #include "tsl_Scheduler_McuTimer.h"
-
-/* stm32duino */
-#include "HardwareSerial.h"
 
 #include "applMain.h"
 
@@ -21,14 +19,10 @@
 /* A test counter */
 static uint8_t mainCnt;
 
-/* Create a global object of type HardwareSerial. */
-HardwareSerial Serial1(PA_10, PA_9);
-
 
 
 /* Public Functions  ---------------------------------------------------------*/
 /**
-
   * @brief Main application - initialization function.
   * @retval None
   */
@@ -48,8 +42,8 @@ void mainAppl_Init(void)
     /* Timer for TSL Scheduler initialization function */
     tslstmr_Init();
 
-    /* Call begin() method of the serial object with needed baud rate */
-    Serial1.begin(115200);
+    /* IBus communication module - initialization function */
+    ibcomm_Init();
 }
 
 /**
@@ -87,6 +81,9 @@ void tsl_10ms_time_slot(void)
 {
     /* Increment a variable for test */
     mainCnt++;
+
+    /* IBus Communication module - main function */
+    ibcomm_MainRunnable();
 }
 
 //******************************************************************************
@@ -126,5 +123,5 @@ void tsl_80ms_time_slot(void)
     DO_Toggle(LED_GREEN);
 
     /* Send a string on serial port */
-    Serial1.print("Hello ");
+    //Serial1.print("Hello ");
 }
